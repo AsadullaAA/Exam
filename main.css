@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/open-sans-condensed-2');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    transition: 0.4s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav li {
+    font-size: 14px;
+    line-height: 21px;
+    color: #222;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 33px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    color: #fff;
+    font-weight: 700;
+}
+
+nav ul li:nth-child(1) {
+    color: #DE2E54;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    color: #DE2E54;
+}
+
+.btn-primary {
+    color: #DE2E54;
+    background: transparent;
+    font-size: 15px;
+    line-height: 22.5px;
+    letter-spacing: 2px;
+    border: 1px solid #DE2E54;
+    padding: 14px 24px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.btn-primary:hover {
+    background: #DE2E54;
+    color: #fff;
+}
+
+.showcase .btn-primary {
+    background: #DE2E54;
+    color: #fff;
+}
+
+.showcase .btn-primary:hover {
+    background: transparent;
+    color: #DE2E54;
+}
+
+.showcase {
+    background: url('../images/image\ 4.png');
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.showcase-main {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    color: #fff;
+}
+
+.showcase-left h1 {
+    padding-top: 137px 170px;
+}
+
+.showcase-left button {
+    margin-top: 60px;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 52px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    max-width: 90%;
+    border-radius: 25px;
+    gap: 5%;
+    padding: 20px;
+}
+main section:nth-child(1) {
+    padding: 70px 0 245px;
+}
+.card:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-right h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.card-right p {
+    color: #444;
+    line-height: 24px;
+}
+
+.card:hover {
+    border: 1px solid #0EB4C1;
+    box-shadow: 1px 2px 15px 5px #0EB4C1;
+}
+
+.card:hover h1 {
+    color: #0EB4C1;
+    animation-name: card-title;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes card-title {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+.info {
+    background: #0EB4C1;
+    position: relative;
+    padding: 284px 0 54px;
+}
+
+.info-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(-50%);
+    gap: 64px;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 112px;
+}
+
+form {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+}
+
+form input,
+form button {
+    padding: 7px 32px;
+}
+
+.info-wrapper iframe {
+    max-height: 331px;
+    height: 292px;
+    border-radius: 30px;
+}
+
+.info-wrapper>iframe,
+.info-wrapper>form {
+    flex: 1;
+}
+
+.info input {
+    background: transparent;
+    border: 1px solid #5f54a482;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #3D3B48;
+}
+
+.info button {
+    box-shadow: 0px -4px 0px #00000017 inset;
+    background: #38CCBB;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid #5f54a482;
+}
+
+
+footer {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    background: #333;
+    width: 100%;
+}
+
+footer nav ul li {
+    color: #fff;
+}
